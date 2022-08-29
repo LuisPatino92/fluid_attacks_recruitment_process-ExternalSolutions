@@ -1,0 +1,11 @@
+def commented_sum(n1, n2):
+
+    number1 = n1
+    number2 = n2
+
+    result = number1 + number2
+
+    if result == 0:
+        print('result is 0')
+    
+    return result

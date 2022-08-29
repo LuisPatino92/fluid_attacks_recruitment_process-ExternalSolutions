@@ -1,0 +1,5 @@
+def basic_sum(n1, n2):
+    return(n1 + n2)
+
+def main(n1, n2):
+    print(basic_sum(n1, n2))

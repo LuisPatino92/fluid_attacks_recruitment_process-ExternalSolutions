@@ -1,0 +1,4 @@
+def commented_sum2(*numbers):
+
+    if len(numbers == 2):
+        return numbers[0] + numbers[1]
