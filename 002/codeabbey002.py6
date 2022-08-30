@@ -1,0 +1,11 @@
+class Solution:
+    def loop_sum(amount, *args):
+    i = 0 
+    amount = input()
+    solutions = []
+
+    while i < amount:
+        val1, val2 = input().split(" ")
+        solutions.append(val1 + val2)
+        i++
+    return solutions

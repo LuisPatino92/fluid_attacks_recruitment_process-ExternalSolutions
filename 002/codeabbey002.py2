@@ -1,0 +1,9 @@
+def loop_sum(amount, *args):
+    amount = input()
+    solutions = []
+
+    for i in range(amount):
+        val1, val2 = input().split(" ")
+        solutions.append(val1 + val2)
+    
+    return solutions
