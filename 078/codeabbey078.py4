@@ -1,0 +1,14 @@
+manual_points = np.array([[0.1,np.log(.1)],[.27,-.6],[.82,.23],[2.5,np.log(2.5)]])
+Bézier = np.array(BézierCoeff(tPlot)).dot(manual_points)
+residuum = fcn(Bézier[:,0]) - Bézier[:,1]
+
+fig, ax = plt.subplots()
+ax.plot(xPlot, fcn(xPlot),   'r-')
+ax.plot(xData, data[:,1],    'ro', label='input')
+ax.plot(Bézier[:,0],
+        Bézier[:,1],         'k-', label='fit')
+ax.plot(xPlot, 10.*residuum, 'b-', label='10*residuum')
+ax.plot(manual_points[:,0],
+        manual_points[:,1],  'ko:', fillstyle='none')
+ax.legend()
+fig.show()
